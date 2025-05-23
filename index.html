@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BuildRight Construction</title>
+    <link rel="stylesheet" href="main.css" />
+
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+      const lightbox = GLightbox({ selector: ".glightbox" });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img src="img/VD Logo.jpg" alt="Logo" />
+
+          <h1>VRUSHABADRI<span> DEVELOPERS</span></h1>
+        </div>
+
+        <nav>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#quote" class="cta-button desktop">Get a Quote</a>
+
+        <div
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle menu"
+          role="button"
+          tabindex="0"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true">
+        <nav
+          class="mobile-nav"
+          role="navigation"
+          aria-label="Mobile navigation"
+        >
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="#quote" class="cta-button">Get a Quote</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="carousel-full">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/corner view.jpg" alt="Building View 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/night view.jpg" alt="Building View 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/gallery/top view.jpg" alt="Building View 3" />
+          </div>
+        </div>
+        <!-- Navigation -->
+        <!-- <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+      </div>
+    </section>
+
+    <!-- <section class="gallery-section">
+      <div class="horizontal-scroll-gallery">
+        <img src="img/gallery/amphi theater (1).jpg" alt="Interior 1" />
+        <img src="img/gallery/basket ball.jpg" alt="Interior 2" />
+        <img src="img/gallery/club house.jpg" alt="Basketball Court" />
+
+        <img src="img/gallery/cricket.jpg" alt="Interior 1" />
+        <img src="img/gallery/fountain.jpg" alt="Interior 2" />
+        <img src="img/gallery/play area-01 (1).jpg" alt="Basketball Court" />
+
+        <img src="img/gallery/pool view.jpg" alt="Interior 1" />
+        <img src="img/gallery/shuttle court view.jpg" alt="Interior 2" />
+      </div>
+    </section> -->
+
+    <div class="gallery">
+      <h1>OUR PROJECT <span>GALLERY</span></h1>
+    </div>
+
+    <div class="horizontal-scroll">
+      <img src="img/gallery/amphi theater (1).jpg" />
+      <img src="img/gallery/club house.jpg" />
+      <img src="img/gallery/basket ball.jpg" />
+      <img src="img/gallery/amphi theater (1).jpg" />
+      <img src="img/gallery/club house.jpg" />
+      <img src="img/gallery/basket ball.jpg" />
+      <img src="img/gallery/amphi theater (1).jpg" />
+      <img src="img/gallery/club house.jpg" />
+      <img src="img/gallery/basket ball.jpg" />
+    </div>
+
+    <section class="projects-section">
+      <h2>OUR PREVIOUS <span style="color: #248d4c">PROJECTS</span></h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <a
+            class="portfolio-btn"
+            href="https://lh3.googleusercontent.com/p/AF1QipOPbholllIQj6_yx2XUSXeVqaTwoYEv4Dd1GF0N=s680-w680-h510"
+            data-lightbox="portfolio"
+            style="text-decoration: none; color: inherit"
+          >
+            <img
+              src="https://lh3.googleusercontent.com/p/AF1QipOPbholllIQj6_yx2XUSXeVqaTwoYEv4Dd1GF0N=s680-w680-h510"
+              alt="SAI BALAJI RESIDENCY"
+            />
+            <div class="project-info">
+              <h3>SAI BALAJI RESIDENCY</h3>
+              <p>
+                <i class="fas fa-map-marker-alt"></i>Parappana Agrahara Main Rd,
+                opp. AECS Layout Main Road, Sai Sree Layout, Parappana Agrahara,
+                Bengaluru, Karnataka 560068
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <a
+            class="portfolio-btn"
+            href="https://lh3.googleusercontent.com/p/AF1QipPfpiqli4ZvD3gZkCtE7t2zoYIUyPWzOWCyKNv9=s1360-w1360-h1020"
+            data-lightbox="portfolio"
+            style="text-decoration: none; color: inherit"
+          >
+            <img
+              src="https://lh3.googleusercontent.com/p/AF1QipPfpiqli4ZvD3gZkCtE7t2zoYIUyPWzOWCyKNv9=s1360-w1360-h1020"
+              alt="C Block Sapthagiri Towers"
+            />
+            <div class="project-info">
+              <h3>C Block Sapthagiri Towers</h3>
+              <p>
+                <i class="fas fa-map-marker-alt"></i>C Block, Sapthagiri Towers,
+                560087, Harohalli Road, Sorahunase, Karnataka 560066
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <a
+            class="portfolio-btn"
+            href="https://lh3.googleusercontent.com/p/AF1QipOE0j9nCtoLbEmw2gN1DOTBIrQSB2w1R95e0wtB=s1360-w1360-h1020"
+            data-lightbox="portfolio"
+            style="text-decoration: none; color: inherit"
+          >
+            <img
+              src="https://lh3.googleusercontent.com/p/AF1QipOE0j9nCtoLbEmw2gN1DOTBIrQSB2w1R95e0wtB=s1360-w1360-h1020"
+              alt="Vrushabadri Towers"
+            />
+            <div class="project-info">
+              <h3>Vrushabadri Towers</h3>
+              <p>
+                <i class="fas fa-map-marker-alt"></i>Vrushabadri Towers, Sy. No
+                216/213, Koralur Village, Thirumalashettyhally Cross, Hoskote
+                Rd, Soukya Junction, Kasaba Hobli, Whitefield, Bengaluru,
+                Karnataka 560067
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <a
+            class="portfolio-btn"
+            href="https://lh3.googleusercontent.com/p/AF1QipN2S5dXr7foyHT4vZK4sLQJVFDn_Hkalzy8MrN9=s1360-w1360-h1020"
+            data-lightbox="portfolio"
+            style="text-decoration: none; color: inherit"
+          >
+            <img
+              src="https://lh3.googleusercontent.com/p/AF1QipN2S5dXr7foyHT4vZK4sLQJVFDn_Hkalzy8MrN9=s1360-w1360-h1020"
+              alt="Anjanadri Nilaya"
+            />
+            <div class="project-info">
+              <h3>Anjanadri Nilaya</h3>
+              <p>
+                <i class="fas fa-map-marker-alt"></i>VMM3+2M3, 15th Main Rd,
+                AECS Layout - A Block, Singasandra, Bengaluru, Karnataka 560068
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <a
+            class="portfolio-btn"
+            href="https://lh3.googleusercontent.com/p/AF1QipNJIJYldrKBWXVIM1XhTbgSBt2zd2Bemgh2JRHa=s680-w680-h510"
+            data-lightbox="portfolio"
+            style="text-decoration: none; color: inherit"
+          >
+            <img
+              src="https://lh3.googleusercontent.com/p/AF1QipNJIJYldrKBWXVIM1XhTbgSBt2zd2Bemgh2JRHa=s680-w680-h510"
+              alt="Shivani Nivas"
+            />
+            <div class="project-info">
+              <h3>Shivani Nivas</h3>
+              <p>
+                <i class="fas fa-map-marker-alt"></i>No.68/4, 3rd Floor, near
+                BATA Showroom, Sai Sree Layout, Parappana Agrahara, Bengaluru,
+                Karnataka 560100
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <a
+            class="portfolio-btn"
+            href="https://lh3.googleusercontent.com/p/AF1QipOHhpbrWD2U-CDWrHd1Rm5IqTOxSHmamnZkP_H8=s680-w680-h510"
+            data-lightbox="portfolio"
+            style="text-decoration: none; color: inherit"
+          >
+            <img
+              src="https://lh3.googleusercontent.com/p/AF1QipOHhpbrWD2U-CDWrHd1Rm5IqTOxSHmamnZkP_H8=s680-w680-h510"
+              alt="Harshitha Arcade"
+            />
+            <div class="project-info">
+              <h3>Harshitha Arcade</h3>
+              <p>
+                <i class="fas fa-map-marker-alt"></i>3rd Cross, Gurumurthy
+                Temple Road, Somasundarapalya, Sector 2, HSR Layout, Bengaluru,
+                Karnataka 560102
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Add more cards as needed -->
+      </div>
+    </section>
+
+    <!-- Units Section -->
+
+    <section class="units-section">
+      <h2>OUR UNITS & <span style="color: #248d4c">FLOOR PLANS</span></h2>
+      <div class="units-grid">
+        <div class="unit-card">
+          <img
+            src="img/Plan/VRUSHABADRI DEVELOPERS, UNIT 2 - 1745 SQ FT.jpg"
+            alt="1BHK Plan"
+          />
+          <div class="unit-info">
+            <h3>1 BHK</h3>
+            <p>Carpet Area: 620 sq.ft</p>
+            <p>Price: ₹35 Lakhs</p>
+          </div>
+        </div>
+
+        <div class="unit-card">
+          <img
+            src="img/Plan/VRUSHABADRI DEVELOPERS, UNIT 3-1655 sqft.jpg"
+            alt="2BHK Plan"
+          />
+          <div class="unit-info">
+            <h3>2 BHK</h3>
+            <p>Carpet Area: 880 sq.ft</p>
+            <p>Price: ₹55 Lakhs</p>
+          </div>
+        </div>
+
+        <div class="unit-card">
+          <img
+            src="img/Plan/VRUSHABADRI DEVELOPERS, UNIT 3-1655 sqft.jpg"
+            alt="3BHK Plan"
+          />
+          <div class="unit-info">
+            <h3>3 BHK</h3>
+            <p>Carpet Area: 1120 sq.ft</p>
+            <p>Price: ₹72 Lakhs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="brochure-button">
+      <a href="img/Pdf/VSP-28.pdf" target="_blank" class="btn-download">
+        📄 DOWNLOAD PROJECT BROCHURE
+      </a>
+    </div>
+
+    <section class="video-section" style="text-align: center">
+      <h2>LIVE <span style="color: #248d4c">VIDEO</span></h2>
+      <div class="video-wrapper">
+        <video autoplay muted loop playsinline>
+          <source
+            src="img/Video/Hungry Cheetah - OG Glimpse _ Pawan Kalyan _ Sujeeth _ Thaman S _ DVV Danayya.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <!-- <div class="video-overlay">
+          <h2>Live From Our Site</h2>
+          <p>Watch real progress in real time</p>
+        </div> -->
+      </div>
+    </section>
+
+    <script src="menu.js"></script>
+  </body>
+</html>
