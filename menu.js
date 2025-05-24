@@ -95,3 +95,10 @@ function prevImg() {
   current = (current - 1 + images.length) % images.length;
   document.getElementById("modal-img").src = images[current];
 }
+
+/*Video */
+
+function showLocalVideo() {
+  document.getElementById("liveStream").classList.add("d-none");
+  document.getElementById("fallbackVideo").classList.remove("d-none");
+}
