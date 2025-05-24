@@ -1,6 +1,9 @@
-body {
+html {
+  scroll-behavior: smooth;
+}
+s body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   background-color: #fff;
 }
 
@@ -55,7 +58,7 @@ nav a {
   font-weight: 600;
   font-size: 18px;
   transition: color 0.3s;
-  font-family: cursive;
+  font-family: "Times New Roman", Times, serif;
   border-bottom: 2px solid transparent;
   padding-bottom: 4px;
   transition: border-color 1s ease;
@@ -311,6 +314,57 @@ nav a:hover {
   scroll-snap-align: start;
 } */
 
+/*About Section*/
+.about-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-text {
+    padding-left: 30px;
+  }
+}
+
 /*Gallery*/
 
 .gallery {
@@ -366,7 +420,7 @@ nav a:hover {
   }
 
   .gallery span {
-    font-size: 20px;
+    font-size: 27px;
     color: #248d4c;
   }
 }
@@ -523,59 +577,144 @@ nav a:hover {
 
 /*Video Section*/
 
-.video-section {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+/* vedio sections */
+
+#live-video {
+  background: linear-gradient(to bottom, rgb(235, 229, 229));
+  padding: 50px 15px;
 }
 
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  height: 60vh;
+#live-video h2 {
+  color: #444444;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 
-.video-wrapper video {
+#live-video iframe,
+#live-video video {
+  border: 5px solid #ffffff;
+  border-radius: 12px;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.video-overlay {
+/* Responsive 16:9 Video Wrapper */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border: 6px solid #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.video-wrapper video,
+.video-wrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(20, 20, 20, 0.4);
+}
+
+/* Optional: extra polish on smaller devices */
+@media (max-width: 576px) {
+  #live-video h2 {
+    font-size: 1.4rem;
+  }
+
+  .video-wrapper {
+    border-width: 4px;
+    border-radius: 12px;
+  }
+}
+
+/*Contact Us Section*/
+
+.contact-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.contact-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  padding: 20px;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-.video-overlay h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
 }
 
-.video-overlay p {
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   font-size: 1rem;
+  width: 100%;
 }
 
-@media (max-width: 768px) {
-  .video-wrapper {
-    height: 40vh;
-  }
+.contact-form button {
+  padding: 12px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
 
-  .video-overlay h2 {
-    font-size: 1.5rem;
-  }
+.contact-form button:hover {
+  background-color: #1abc9c;
+}
 
-  .video-overlay p {
-    font-size: 0.9rem;
+.contact-info {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.contact-info h3 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.contact-info p {
+  margin: 8px 0;
+}
+
+.contact-info i {
+  margin-right: 8px;
+  color: #e74c3c;
+}
+
+@media (max-width: 480px) {
+  .contact-form input,
+  .contact-form textarea {
+    padding: 2px;
+    font-size: 1.2rem;
   }
 }
