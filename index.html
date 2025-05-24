@@ -47,6 +47,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
@@ -62,14 +67,14 @@
           <h1>VRUSHABADRI<span> DEVELOPERS</span></h1>
         </div>
 
-        <nav>
-          <a href="#services">Services</a>
+        <nav class="nav-links">
+          <a href="#gallery">Gallery</a>
           <a href="#projects">Projects</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </nav>
 
-        <a href="#quote" class="cta-button desktop">Get a Quote</a>
+        <a href="#contact" class="cta-button desktop">Get a Quote</a>
 
         <div
           class="hamburger"
@@ -90,7 +95,7 @@
           role="navigation"
           aria-label="Mobile navigation"
         >
-          <a href="#services">Services</a>
+          <a href="#gallery">Gallery</a>
           <a href="#projects">Projects</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
@@ -119,22 +124,45 @@
       </div>
     </section>
 
-    <!-- <section class="gallery-section">
-      <div class="horizontal-scroll-gallery">
-        <img src="img/gallery/amphi theater (1).jpg" alt="Interior 1" />
-        <img src="img/gallery/basket ball.jpg" alt="Interior 2" />
-        <img src="img/gallery/club house.jpg" alt="Basketball Court" />
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <!-- Image Side -->
+        <!-- <div class="about-image">
+          <img src="img/gallery/top view.jpg" alt="Project Overview" />
+        </div> -->
 
-        <img src="img/gallery/cricket.jpg" alt="Interior 1" />
-        <img src="img/gallery/fountain.jpg" alt="Interior 2" />
-        <img src="img/gallery/play area-01 (1).jpg" alt="Basketball Court" />
-
-        <img src="img/gallery/pool view.jpg" alt="Interior 1" />
-        <img src="img/gallery/shuttle court view.jpg" alt="Interior 2" />
+        <!-- Text Side -->
+        <div class="about-text">
+          <h2 style="text-align: center">
+            ABOUT THE <span style="color: #248d4c"> PROJECT</span>
+          </h2>
+          <p>
+            Welcome to <strong>Vrushabadri Spring Park</strong> Apartments,a
+            place that effortlessly blends the charms of both old and new
+            Bengaluru,offering a living experience thats truly at your
+            fingertips.Enjoy all the benefits of fully equipped apartment with
+            the added advantage of being seamlessly connected to a robust
+            network of accessible ameneties.These include an execellent
+            transport links,a delightfull mix of traditional and contemporary
+            culinary experiences,top-rated schools and a variety of
+            re-creational,leisure and lifetime options.Your perfect balance of
+            comfort and convenience awaits at
+            <strong>Vrushabadri Spring Park Apartments.</strong>
+          </p>
+          <p>
+            Standing tall with G+13 - Storeyed and two impressive blocks.<strong
+              >Vrushabadri Spring Park</strong
+            >boasts 140 units of 2 & 3 BHK homes.This architectural masterpiece
+            stands as a testament to creativity and sophistication,offering a
+            visual experience that residents can truly take pride in. The design
+            fosters a sense of inspiration,rejuvenation and relaxation,allowing
+            you to unwind in a peacefull and serene environment.
+          </p>
+        </div>
       </div>
-    </section> -->
+    </section>
 
-    <div class="gallery">
+    <div id="gallery" class="gallery">
       <h1>OUR PROJECT <span>GALLERY</span></h1>
     </div>
 
@@ -142,15 +170,93 @@
       <img src="img/gallery/amphi theater (1).jpg" />
       <img src="img/gallery/club house.jpg" />
       <img src="img/gallery/basket ball.jpg" />
-      <img src="img/gallery/amphi theater (1).jpg" />
-      <img src="img/gallery/club house.jpg" />
-      <img src="img/gallery/basket ball.jpg" />
-      <img src="img/gallery/amphi theater (1).jpg" />
-      <img src="img/gallery/club house.jpg" />
+      <img src="img/gallery/cricket.jpg" />
+      <img src="img/gallery/fountain.jpg" />
+      <img src="img/gallery/play area-01 (1).jpg" />
+      <img src="img/gallery/pool view.jpg" />
+      <img src="img/gallery/shuttle court view.jpg" />
       <img src="img/gallery/basket ball.jpg" />
     </div>
 
-    <section class="projects-section">
+    <!-- Units Section -->
+
+    <section class="units-section">
+      <h2>OUR UNITS & <span style="color: #248d4c">FLOOR PLANS</span></h2>
+      <div class="units-grid">
+        <div class="unit-card">
+          <img
+            src="img/Plan/VRUSHABADRI DEVELOPERS, UNIT 1 -1290 SQ FT.jpg"
+            alt="1BHK Plan"
+          />
+          <div class="unit-info">
+            <h3>UNIT 1</h3>
+            <p>Carpet Area: 1290 sq.ft</p>
+            <p>Price: ₹XX Lakhs</p>
+          </div>
+        </div>
+
+        <div class="unit-card">
+          <img
+            src="img/Plan/VRUSHABADRI DEVELOPERS, UNIT 2 - 1745 SQ FT.jpg"
+            alt="2BHK Plan"
+          />
+          <div class="unit-info">
+            <h3>UNIT 2</h3>
+            <p>Carpet Area: 1745 sq.ft</p>
+            <p>Price: ₹XX Lakhs</p>
+          </div>
+        </div>
+
+        <div class="unit-card">
+          <img
+            src="img/Plan/VRUSHABADRI DEVELOPERS, UNIT 3-1655 sqft.jpg"
+            alt="3BHK Plan"
+          />
+          <div class="unit-info">
+            <h3>UNIT 3</h3>
+            <p>Carpet Area: 1655 sq.ft</p>
+            <p>Price: ₹XX Lakhs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="brochure-button">
+      <a href="img/Pdf/VSP-28.pdf" target="_blank" class="btn-download">
+        📄 DOWNLOAD PROJECT BROCHURE
+      </a>
+    </div>
+
+    <!-- Live Video Section -->
+    <section id="live-video" class="py-5" style="background-color: white">
+      <div class="container">
+        <div class="text-center mb-4" data-aos="fade-down">
+          <h2 class="fw-bold">
+            WALK THROUGH 2D <span style="color: #248d4c"> ANIMATED VIDEO</span>
+          </h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10" data-aos="zoom-in">
+            <div
+              class="video-wrapper position-relative rounded shadow overflow-hidden"
+            >
+              <div class="ratio ratio-16x9">
+                <video autoplay muted loop playsinline controls>
+                  <source
+                    src="https://rr3---sn-npoldn7z.googlevideo.com/videoplayback?expire=1748103112&ei=aJsxaK62JsuhvdIPjsOR4Qs&ip=163.5.234.173&id=o-AC4uBJR4ZYMfn3zpZu8uMikebnA_kRWf4au7WGyTWyZg&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&siu=1&bui=AecWEAZZYEBmJe6ZkORiAPpubYaa5MrxIPhCZvoeRf629DZEAkUg-q4GM4eWyX7DOruLy0YeWw&spc=wk1kZkQiBq-O7vY9g7fD&vprv=1&svpuc=1&mime=video%2Fmp4&ns=IVU3AW0LWYG0GCM8RDkE1GcQ&rqh=1&gir=yes&clen=15442634&ratebypass=yes&dur=286.720&lmt=1748074573841240&c=TVHTML5_SIMPLY_EMBEDDED_PLAYER&sefc=1&txp=6209224&n=DlHTSJyXyk4Yxw&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Csiu%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRgIhALhgqsReEEE4NZ1zR2hZ-luttxavqxv9saX1SAwx5EjVAiEAjO1cx6B48CU5hweSM7eCy5rzu4YlyCHb5Dou-KoDWCI%3D&title=Vrushabadri+Spring+Park+3D+Walkthrough%2C+Sarjapura+Road%2C+Neriga.++++CONTACT%3A+9900093268.&redirect_counter=1&cm2rm=sn-25gkr7l&rrc=80&fexp=24350590,24350737,24350827,24350961,24351063,24351173,24351177,24351495,24351528,24351594,24351638,24351658,24351662,24351759,24351789,24351864,24351907,24352018,24352019&req_id=2de735b6af2fa3ee&cms_redirect=yes&met=1748081523,&mh=W8&mip=106.51.60.204&mm=34&mn=sn-npoldn7z&ms=ltu&mt=1748081080&mv=m&mvi=3&pl=22&rms=ltu,au&lsparams=met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=ACuhMU0wRgIhALRivkwQ6Il48r4jZ-EQuTpiSCCvgq584M30B5z_p3d2AiEA5MmiaRzMj-Dg8EtFDIZIzT8-FkigGcbCtCH2ad7jrmo%3D"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
       <h2>OUR PREVIOUS <span style="color: #248d4c">PROJECTS</span></h2>
       <div class="project-grid">
         <div class="project-card">
@@ -288,69 +394,28 @@
       </div>
     </section>
 
-    <!-- Units Section -->
+    <section id="contact" class="contact-section">
+      <h2>CONTACT US</h2>
+      <div class="contact-container">
+        <!-- Contact Form -->
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <input type="tel" placeholder="Your Phone Number" />
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
 
-    <section class="units-section">
-      <h2>OUR UNITS & <span style="color: #248d4c">FLOOR PLANS</span></h2>
-      <div class="units-grid">
-        <div class="unit-card">
-          <img
-            src="img/Plan/VRUSHABADRI DEVELOPERS, UNIT 2 - 1745 SQ FT.jpg"
-            alt="1BHK Plan"
-          />
-          <div class="unit-info">
-            <h3>1 BHK</h3>
-            <p>Carpet Area: 620 sq.ft</p>
-            <p>Price: ₹35 Lakhs</p>
-          </div>
+        <!-- Contact Details -->
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i>#111/3,NERIGA VILLAGE, SARJAPUR
+            ROAD,BENGALURU-560087
+          </p>
+          <p><i class="fas fa-envelope"></i> mail@vrushabadridevelopers.in</p>
+          <p><i class="fas fa-phone"></i>9900093268 / 9900093269 / 944837388</p>
         </div>
-
-        <div class="unit-card">
-          <img
-            src="img/Plan/VRUSHABADRI DEVELOPERS, UNIT 3-1655 sqft.jpg"
-            alt="2BHK Plan"
-          />
-          <div class="unit-info">
-            <h3>2 BHK</h3>
-            <p>Carpet Area: 880 sq.ft</p>
-            <p>Price: ₹55 Lakhs</p>
-          </div>
-        </div>
-
-        <div class="unit-card">
-          <img
-            src="img/Plan/VRUSHABADRI DEVELOPERS, UNIT 3-1655 sqft.jpg"
-            alt="3BHK Plan"
-          />
-          <div class="unit-info">
-            <h3>3 BHK</h3>
-            <p>Carpet Area: 1120 sq.ft</p>
-            <p>Price: ₹72 Lakhs</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="brochure-button">
-      <a href="img/Pdf/VSP-28.pdf" target="_blank" class="btn-download">
-        📄 DOWNLOAD PROJECT BROCHURE
-      </a>
-    </div>
-
-    <section class="video-section" style="text-align: center">
-      <h2>LIVE <span style="color: #248d4c">VIDEO</span></h2>
-      <div class="video-wrapper">
-        <video autoplay muted loop playsinline>
-          <source
-            src="img/Video/Hungry Cheetah - OG Glimpse _ Pawan Kalyan _ Sujeeth _ Thaman S _ DVV Danayya.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-        <!-- <div class="video-overlay">
-          <h2>Live From Our Site</h2>
-          <p>Watch real progress in real time</p>
-        </div> -->
       </div>
     </section>
 
